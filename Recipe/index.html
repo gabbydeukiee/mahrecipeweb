@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="recipe-logo-EC4BDCE687-seeklogo.com.png" alt="Recipe Logo" class="logo-image"> 
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <h1>Welcome to Our Recipe Collection</h1>
+        <button class="cta-button">Explore Recipes</button>
+    </section>
+
+    <section class="recipe-listing" id="recipes">
+        <div class="recipe-card" onclick="openRecipe('recipe1')">
+            <img src="images (3).jpeg" alt="Recipe 1">
+            <h2>Spaghetti</h2>
+            <p>Spaghetti is a long, thin, cylindrical pasta that originated in Italy and is commonly made from durum wheat semolina. 
+                It’s often served with a variety of sauces, such as marinara, Bolognese, or carbonara, making it a staple in many cuisines around the world..</p>
+        </div>
+        <div class="recipe-card" onclick="openRecipe('recipe2')">
+            <img src="images (4).jpeg" alt="Recipe 2">
+            <h2>Philippine Adobo</h2>
+            <p>Philippine adobo is a popular Filipino dish made by simmering meat—commonly chicken or pork—in a savory and tangy mixture of soy sauce, vinegar, garlic, bay leaves, and black pepper. 
+                It's known for its rich, flavorful taste and is often served with steamed rice.</p>
+        </div>
+       
+    </section>
+
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-recipe-title"></h2>
+            <p id="modal-recipe-description"></p>
+            <h3>Ingredients:</h3>
+            <div id="modal-recipe-ingredients"></div>
+            <img id="modal-recipe-image" src="" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact us: gabby@recipewebsite.com</p>
+        <p>Follow us on social media!</p>
+        <p>&copy; 2025 Recipe Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
